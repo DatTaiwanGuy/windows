@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "https://archive.org/download/WIN8_DP_8045_AIO_X64_EN-US/8045%20AIO.iso"
+      VERSION: "https://archive.org/download/Windows8Build8056fbl_dnt2_busx64/6.2.8056.0.fbl_dnt2_bus.110727-1700_amd64fre_client-prerelease_retail_en-us-HM3_CCS_X64FRE_EN-US_DV5.iso"
       RAM_SIZE: "8G"
       CPU_CORES: "1"
       DISK_SIZE: "50G"

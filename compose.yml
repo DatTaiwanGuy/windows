@@ -7,7 +7,7 @@ services:
       RAM_SIZE: "8G"
       CPU_CORES: "1"
       DISK_SIZE: "50G"
-      DISK_TYPE: "blk"
+      DISK_TYPE: "scsi"
       MANUAL: "Y"
       BOOT_MODE: "windows_legacy"
     devices:

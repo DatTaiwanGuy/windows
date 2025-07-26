@@ -8,7 +8,6 @@ services:
       CPU_CORES: "1"
       DISK_SIZE: "50G"
       DISK_TYPE: "blk"
-      ADAPTER: "paravirtualized"
       MANUAL: "Y"
       BOOT_MODE: "windows_legacy"
     devices:

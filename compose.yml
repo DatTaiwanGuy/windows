@@ -3,13 +3,11 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "https://archive.org/download/Windows8Build8056fbl_dnt2_busx64/6.2.8056.0.fbl_dnt2_bus.110727-1700_amd64fre_client-prerelease_retail_en-us-HM3_CCS_X64FRE_EN-US_DV5.iso"
+      VERSION: "https://archive.org/download/windows-10-build-9913/10.0.9913.0.fbl_awesome1501.141217-1931_amd64fre_client-professional_retail_en-us-J_CPRA_X64FRE_EN-US_DV5.iso"
       RAM_SIZE: "8G"
-      CPU_CORES: "1"
-      DISK_SIZE: "50G"
-      DISK_TYPE: "scsi"
-      MANUAL: "Y"
-      BOOT_MODE: "windows_legacy"
+      CPU_CORES: "2"
+      DISK_SIZE: "70G"
+      NETWORK: "N"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -20,7 +18,7 @@ services:
       - 3389:3389/tcp
       - 3389:3389/udp
     volumes:
-      - ./windows:/storage
-      - ./workspaces/windowsbetas/winc:/data    
+      - ./windows:/storage     
+      - ./winc:/data    
     restart: always
     stop_grace_period: 2m

@@ -3,10 +3,12 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "https://archive.org/download/Windows10build10102ENx64/10.0.10102.0.winmain_prs.150417-2325_amd64fre_client-professional-core_retail_en-us-J_CCSA_X64FRE_EN-US_DV5.iso"
+      VERSION: "https://archive.org/download/win-11-english-x64/Win11_English_x64.iso"
       RAM_SIZE: "8G"
       CPU_CORES: "2"
       DISK_SIZE: "70G"
+      BOOT_MODE: "windows_secure"
+      TPM: "Y"
     devices:
       - /dev/kvm
       - /dev/net/tun

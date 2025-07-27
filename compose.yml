@@ -3,11 +3,11 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "https://archive.org/download/windows-10-build-9913/10.0.9913.0.fbl_awesome1501.141217-1931_amd64fre_client-professional_retail_en-us-J_CPRA_X64FRE_EN-US_DV5.iso"
+      VERSION: "https://archive.org/download/Windows10Build10031Debombed/Windows%2010%20Build%2010031%20%28EN-US%2C%20Debombed%2C%20UEFI%20Only%29.iso"
       RAM_SIZE: "8G"
       CPU_CORES: "2"
       DISK_SIZE: "70G"
-      NETWORK: "N"
+      MANUAL: "Y"
     devices:
       - /dev/kvm
       - /dev/net/tun

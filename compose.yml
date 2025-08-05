@@ -11,7 +11,7 @@ services:
       BOOT_MODE: "windows_legacy"
       VGA: "cirrus"
       TPM: "N"
-      ARGUMENTS: "-boot d -cpu host -usbdevice tablet -rtc base=2004-05-01,clock=vm -drive file=/lh_usa_4074_x86fre_pro-dvd.iso,media=cdrom,interface=ide -accel tcg"
+      ARGUMENTS: "-boot d -cpu host -usbdevice tablet -rtc base=2004-05-01,clock=vm ,media=cdrom,interface=ide -accel tcg"
     devices:
       - /dev/kvm
       - /dev/net/tun

@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "https://archive.org/download/thelonghornarchive/Windows%20Vista%20build%205337.iso"
+      VERSION: "https://store-na-phx-2.gofile.io/download/web/2f096c26-82ee-41ef-8ed2-749d7a5b0811/Windows_XP.iso"
       RAM_SIZE: "8G"
       CPU_CORES: "2"
       DISK_SIZE: "70G"

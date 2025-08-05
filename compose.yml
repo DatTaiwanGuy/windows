@@ -9,6 +9,8 @@ services:
       DISK_SIZE: "70G"
       DISK_TYPE: "ide"
       BOOT_MODE: "windows_legacy"
+      VGA: "std"
+      NETWORK: "N"
       TPM: "N"
     devices:
       - /dev/kvm

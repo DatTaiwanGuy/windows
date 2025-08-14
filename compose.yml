@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "https://archive.org/download/windows-insider-preview-server-v-next-en-us-22463/Windows_InsiderPreview_Server_vNext_en-us_22463.iso"
+      VERSION: "https://archive.org/download/10.0.22366.1000.rs_prerelease.210420-1428_ISO/22366.1000.arm64fre.rs_prerelease.210420-1428_Server_Datacenter_OEMRET_en-us.iso"
       RAM_SIZE: "8GB"
       CPU_CORES: "1"
       BOOT_MODE: "windows_secure"

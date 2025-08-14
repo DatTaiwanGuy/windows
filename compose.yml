@@ -3,15 +3,12 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "https://archive.org/download/4074_twiwmtb/lh_usa_4074_x86fre_pro-dvd.iso"
-      PLATFORM: "x86"
-      RAM_SIZE: "2GB"
+      VERSION: "https://archive.org/download/10.0.22526.1000.rs_prerelease.211215-1332_datacenter_standard_server_EN-US/Windows_InsiderPreview_Server_vNext_en-us_22526.iso"
+      RAM_SIZE: "8GB"
       CPU_CORES: "1"
       DISK_TYPE: "ide"
-      BOOT_MODE: "windows_legacy"
-      VGA: "cirrus"
-      TPM: "N"
-      ARGUMENTS: "-boot d -cpu host -usbdevice tablet -rtc base=2004-05-01,clock=vm ,media=cdrom,interface=ide -accel tcg"
+      BOOT_MODE: "windows_secure"
+      TPM: "Y"
     devices:
       - /dev/kvm
       - /dev/net/tun

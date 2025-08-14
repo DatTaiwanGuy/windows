@@ -3,13 +3,11 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "https://archive.org/download/10.0.22526.1000.rs_prerelease.211215-1332_datacenter_standard_server_EN-US/Windows_InsiderPreview_Server_vNext_en-us_22526.iso"
+      VERSION: "https://archive.org/download/windows-insider-preview-server-v-next-en-us-22463/Windows_InsiderPreview_Server_vNext_en-us_22463.iso"
       RAM_SIZE: "8GB"
       CPU_CORES: "1"
-      DISK_TYPE: "ide"
       BOOT_MODE: "windows_secure"
       TPM: "Y"
-      MANUAL: "Y"
     devices:
       - /dev/kvm
       - /dev/net/tun

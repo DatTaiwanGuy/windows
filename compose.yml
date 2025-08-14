@@ -9,6 +9,7 @@ services:
       DISK_TYPE: "ide"
       BOOT_MODE: "windows_secure"
       TPM: "Y"
+      MANUAL: "Y"
     devices:
       - /dev/kvm
       - /dev/net/tun
